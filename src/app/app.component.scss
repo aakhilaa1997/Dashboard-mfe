@@ -1,0 +1,50 @@
+#logo {
+    width: 220px; /* Adjust the width to make it smaller */
+    height: 110px; /* Adjust the height to make it smaller */
+    cursor: pointer; /* Optional: Add pointer cursor for interactivity */
+}
+
+:host {
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+.header-container {
+    display: flex; /* Align logo and dropdown horizontally */
+    align-items: center; /* Vertically align logo and dropdown */
+    justify-content: space-between; /* Space out logo and dropdown */
+    padding: 10px 20px; /* Add padding around the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%; /* Full width of the container */
+}
+
+.dropdown {
+    display: flex; /* Align anchor tags horizontally */
+    gap: 40px; /* Add spacing between anchor tags */
+    padding: 0px 200px 0px 250px;
+    margin-top: -60px;
+}
+
+.dropdown a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+    font-size: 16px; /* Adjust font size */
+    padding: 5px 10px; /* Add padding inside links */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    color: #f3641d;
+}
+
+.dropdown a:hover {
+    background-color: #f3641d; /* Highlight background on hover */
+    color: white; /* Change text color on hover */
+}
