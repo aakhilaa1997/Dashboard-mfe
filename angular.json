@@ -28,8 +28,11 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
-              }
+                "input": "public",
+                "output": "assets"
+              },
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -87,8 +90,11 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
-              }
+                "input": "public",
+                "output": "assets"
+              },
+              "src/favicon.ico" ,
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
