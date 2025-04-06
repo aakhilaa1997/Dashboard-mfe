@@ -48,3 +48,31 @@ img {
     background-color: #f3641d; /* Highlight background on hover */
     color: white; /* Change text color on hover */
 }
+
+.dropdown {
+    position: relative; /* Ensure the dropdown is positioned relative to its parent */
+  }
+  
+  .nested-dropdown {
+    position: absolute; /* Position the dropdown absolutely relative to the parent */
+    top: 100%; /* Place it directly below the parent element */
+    left: 21%; /* Align the dropdown horizontally to the center of the parent */
+    transform: translateX(-50%); /* Adjust for the dropdown's width to center it */
+    background-color: #fff; /* Optional: Add a background color */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    padding: 10px;
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  }
+  
+  
+  .nested-dropdown a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nested-dropdown a:hover {
+    text-decoration: underline;
+  }

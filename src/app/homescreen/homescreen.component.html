@@ -1,7 +1,16 @@
 <img id="logo" src="assets/OneShopLogo.png" alt="One Shop Logo" length="200" width="200"  (click)="navigateToHome()">
 
 <div class="dropdown" *ngIf="showDropdown">
-  <a href="/Food"><b>Food Products</b></a>
+
+  <a href="javascript:void(0)" (click) = "toggleFoodDropdown()"><b>Food Products</b></a>
+  <div class="nested-dropdown" *ngIf="showFoodDropdown">
+    <a href="/Pickles"><b>Pickles</b></a>
+    <a href="/Snacks"><b>Snacks</b></a>
+    <a href="/InstantFood"><b>InstantFood</b></a>
+    <a href="/Cookingprodcts"><b>Cooking Products</b></a>
+    <a href="/Sweets"><b>Sweets</b></a>
+</div>
+
   <a href="/Fashion"><b>Fashion</b></a>
   <a href="/Affiliation"><b>Affiliation</b></a>
   <a href="/AmericaBathakhani"><b>AmericaBathakhani Cookbook</b></a>
