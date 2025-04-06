@@ -52,27 +52,87 @@ img {
 .dropdown {
     position: relative; /* Ensure the dropdown is positioned relative to its parent */
   }
+// -------------------------------------------------------------------------------
   
-  .nested-dropdown {
+  .food-dropdown {
     position: absolute; /* Position the dropdown absolutely relative to the parent */
     top: 100%; /* Place it directly below the parent element */
-    left: 21%; /* Align the dropdown horizontally to the center of the parent */
-    transform: translateX(-50%); /* Adjust for the dropdown's width to center it */
+    left: 15%; /* Align the dropdown horizontally to the center of the parent */
     background-color: #fff; /* Optional: Add a background color */
-    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
     padding: 10px;
-    z-index: 1000; /* Ensure it appears above other elements */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
   }
   
-  
-  .nested-dropdown a {
+  .food-dropdown a {
     display: block;
-    margin: 5px 0;
-    text-decoration: none;
-    color: black;
+    color: #007bff;
+  }
+
+// -------------------------------------------------------------------------------
+.fashion-dropdown {
+    position: absolute; /* Position the dropdown absolutely relative to the parent */
+    top: 100%; /* Place it directly below the parent element */
+    left: 23.5%; /* Align the dropdown horizontally to the center of the parent */
+    background-color: #fff; /* Optional: Add a background color */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
   }
   
-  .nested-dropdown a:hover {
-    text-decoration: underline;
+  .fashion-dropdown a {
+    display: block;
+    color: #007bff;
   }
+// -------------------------------------------------------------------------------
+.affiliate-dropdown {
+    position: absolute; /* Position the dropdown absolutely relative to the parent */
+    top: 100%; /* Place it directly below the parent element */
+    left: 33%; /* Align the dropdown horizontally to the center of the parent */
+    background-color: #fff; /* Optional: Add a background color */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  }
+  
+  .affiliate-dropdown a {
+    display: block;
+    color: #007bff;
+  }
+  // -------------------------------------------------------------------------------
+  .cookbooks-dropdown {
+    position: absolute; /* Position the dropdown absolutely relative to the parent */
+    top: 100%; /* Place it directly below the parent element */
+    left: 41%; /* Align the dropdown horizontally to the center of the parent */
+    background-color: #fff; /* Optional: Add a background color */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  }
+  .cookbooks-dropdown a {
+    display: block;
+    color: #007bff;
+  }
+  // -------------------------------------------------------------------------------
+  .reviews-dropdown {
+    position: absolute; /* Position the dropdown absolutely relative to the parent */
+    top: 100%; /* Place it directly below the parent element */
+    left: 52%; /* Align the dropdown horizontally to the center of the parent */
+    background-color: #fff; /* Optional: Add a background color */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  }
+  .reviews-dropdown a {
+    display: block;
+    color: #007bff;
+  }
+  // -------------------------------------------------------------------------------
+  .myaccount-dropdown {
+    position: absolute; /* Position the dropdown absolutely relative to the parent */
+    top: 100%; /* Place it directly below the parent element */
+    left: 79%; /* Align the dropdown horizontally to the center of the parent */
+    background-color: #fff; /* Optional: Add a background color */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  }
+  .myaccount-dropdown a {
+    display: block;
+    color: #007bff;
+  }
+  // -------------------------------------------------------------------------------

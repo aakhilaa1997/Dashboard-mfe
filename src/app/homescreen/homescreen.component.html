@@ -1,24 +1,58 @@
 <img id="logo" src="assets/OneShopLogo.png" alt="One Shop Logo" length="200" width="200"  (click)="navigateToHome()">
 
 <div class="dropdown" *ngIf="showDropdown">
-
   <a href="javascript:void(0)" (click) = "toggleFoodDropdown()"><b>Food Products</b></a>
-  <div class="nested-dropdown" *ngIf="showFoodDropdown">
+    <div class="food-dropdown" *ngIf="showFoodDropdown">
     <a href="/Pickles"><b>Pickles</b></a>
     <a href="/Snacks"><b>Snacks</b></a>
     <a href="/InstantFood"><b>InstantFood</b></a>
     <a href="/Cookingprodcts"><b>Cooking Products</b></a>
     <a href="/Sweets"><b>Sweets</b></a>
-</div>
+    </div>
 
-  <a href="/Fashion"><b>Fashion</b></a>
-  <a href="/Affiliation"><b>Affiliation</b></a>
-  <a href="/AmericaBathakhani"><b>AmericaBathakhani Cookbook</b></a>
-  <a href="/Reviews"><b>Review</b></a>
+  <a href="javascript:void(1)" (click) = "toggleFashionDropdown()"><b>Fashion</b></a>
+    <div class ="fashion-dropdown" *ngIf="showFashionDropdown">
+        <a href="/ClothingT"><b>Traditional Clothing</b></a>
+        <a href="/ClothingW"><b>Western Clothing</b></a>
+        <a href="/Accessories"><b>Accessories</b></a>
+        <a href="/Footwear"><b>Footwear</b></a>
+        <a href="/Makeup"><b>Makeup</b></a>
+        <a href="/Styling"><b>Styling</b></a>
+    </div>  
+
+  <a href="javascript:void(2)"(click) = "toggleaffiliateDropdown()"><b>Affiliation</b></a>
+  <div class ="affiliate-dropdown" *ngIf="showaffiliateDropdown">
+    <a href="/Immigration"><b>Immigration</b></a>
+    <a href="/ShopGroups"><b>ShopGroups</b></a>
+    <a href="Lawyers"><b>Lawyers</b></a>
+    <a href="/Contacts"><b>Contacts</b></a>
+    <a href="/Influencers"><b>Influencers</b></a>
+    <a href="/Collaboration"><b>Collaborations</b></a>
+ </div>  
+
+  <a href="javascript:void(3)"(click) = "togglecookbooksDropdown()"><b>Cookbooks</b></a>
+  <div class ="cookbooks-dropdown" *ngIf="showcookbooksDropdown">
+    <a href="/Americabathakhani"><b>AmericaBathakhani</b></a>
+  </div>
+
+  <a href="javascript:void(4)"(click) = "togglereviewsDropdown()"><b>Reviews</b></a>
+  <div class ="reviews-dropdown" *ngIf="showreviewsDropdown">
+    <a href="/Cinema"><b>Cinema</b></a>
+    <a href="/Restraunt"><b>Restraunt</b></a>
+    <a href="/Product"><b>Product</b></a>
+  </div>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="/About"><b>About</b></a>
+
+  <a href="/Orders"><b>Orders</b></a>
   <a href="/Contact US"><b>Contact Us</b></a>
-  <a href="MyAccount"><b>My Account</b></a>
+
+  <a href="javascript:void(5)"(click) = "togglemyaccountDropdown()"><b>My Account</b></a>
+  <div class ="myaccount-dropdown" *ngIf="showmyaccountDropdown">
+    <a href="/CreateAccount"><b>Create Business Account</b></a>
+    <a href="/Restraunt"><b>Change Privacy</b></a>
+    <a href="/Product"><b>Sign Out</b></a>
+  </div>
 </div>
 
 
